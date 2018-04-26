@@ -21,3 +21,4 @@ For Integration Settings, select **No** to use Jenkins host to build the jobs.
 ![Resource List](images/jenkins-portal-03.png)  
 Once done with the integration settings, click **OK**, and then **OK** again on the validation summary. Click **Create** on the Terms of use summary. The Jenkins server takes a few minutes to deploy.  
 ## Configure Jenkins  
+In the Azure portal, browse to the Jenkins Resource Group, select the Jenkins virtual machine, and take note of the DNS name.  
