@@ -8,3 +8,11 @@ Enter the following information on the basics form and click **OK** when done.
 * **Resource group** - create a new or select an existing resource group.  
 * **Location** - select a location for the Jenkins server.  
 ![Resource List](images/jenkins-portal-01.png)
+On the additional settings form, complete the following items:  
+* **Size** - Select the appropriate sizing option for your Jenkins virtual machine.  
+* **VM disk type** - Specify either HDD (hard-disk drive) or SSD (solid-state drive) for the Jenkins server.  
+* **Virtual network** - (Optional) Select Virtual network to modify the default settings.  
+* **Subnets** - Select Subnets, verify the information, and select **OK**.  
+* **Public IP address** - Selecting the Public IP address allows you to give it a custom name, configure SKU, and assignment method.  
+* **Domain name label** - Specify a value to create a fully qualified URL to the Jenkins virtual machine.  
+* **Jenkins release type** - Select the desired release type from the options: LTS, Weekly build, or Azure Verified.  
