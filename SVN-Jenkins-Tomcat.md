@@ -16,3 +16,5 @@ On the additional settings form, complete the following items:
 * **Public IP address** - Selecting the Public IP address allows you to give it a custom name, configure SKU, and assignment method.  
 * **Domain name label** - Specify a value to create a fully qualified URL to the Jenkins virtual machine.  
 * **Jenkins release type** - Select the desired release type from the options: LTS, Weekly build, or Azure Verified.  
+![Resource List](images/jenkins-portal-02.png)
+For Integration Settings, select **No** to use Jenkins host to build the jobs.  
