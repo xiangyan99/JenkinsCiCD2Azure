@@ -7,3 +7,4 @@ Enter the following information on the basics form and click **OK** when done.
 * **Subscription** - select an Azure subscription.  
 * **Resource group** - create a new or select an existing resource group.  
 * **Location** - select a location for the Jenkins server.  
+![Resource List](images/jenkins-portal-01.png)
