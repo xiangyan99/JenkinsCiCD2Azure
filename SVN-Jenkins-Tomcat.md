@@ -18,3 +18,4 @@ On the additional settings form, complete the following items:
 * **Jenkins release type** - Select the desired release type from the options: LTS, Weekly build, or Azure Verified.  
 ![Resource List](images/jenkins-portal-02.png)  
 For Integration Settings, select **No** to use Jenkins host to build the jobs.  
+![Resource List](images/jenkins-portal-03.png)  
