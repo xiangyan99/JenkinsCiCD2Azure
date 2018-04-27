@@ -22,3 +22,12 @@ For Integration Settings, select **No** to use Jenkins host to build the jobs.
 Once done with the integration settings, click **OK**, and then **OK** again on the validation summary. Click **Create** on the Terms of use summary. The Jenkins server takes a few minutes to deploy.  
 ## Configure Jenkins  
 In the Azure portal, browse to the Jenkins Resource Group, select the Jenkins virtual machine, and take note of the DNS name.  
+![Resource List](images/jenkins-portal-fqdn.png)  
+Browser to the DNS name of the Jenkins VM and copy the returned SSH string.  
+![Resource List](images/jenkins-portal-04.png)  
+Open up a terminal session on your development system, and paste in the SSH string from the last step. Update 'username' to the username specified when deploying the Jenkins server.  
+Once connected, run the following command to retrieve the initial admin password.  
+```bash
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+Leave the SSH session and tunnel running, and navigate to http://localhost:8080 in a browser. Paste the initial admin password into the field as seen in the following image. Select Continue when done.  
