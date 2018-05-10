@@ -30,4 +30,4 @@ Once connected, run the following command to retrieve the initial admin password
 ```bash
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-Leave the SSH session and tunnel running, and navigate to http://localhost:8080 in a browser. Paste the initial admin password into the field as seen in the following image. Select Continue when done.  
+Leave the SSH session and tunnel running, and navigate to http://localhost:8080 in a browser. Paste the initial admin password into the field as seen in the following image. Select **Continue** when done.  
