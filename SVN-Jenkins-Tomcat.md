@@ -39,3 +39,5 @@ Create a new admin user account. This account is used for logging into and worki
 Select **Save and Finish** when done, and then **Start using Jenkins** to complete the configuration.  
 Jenkins is now configured and ready to build and deploy code. For this example, a simple Java application is used to demonstrate a Jenkins build on Azure Container Instances.  
 ## Create build job  
+Now create a Jenkins build job. Select **New Item**, give the build project a name such as svn-tomcat-demo, select **Freestyle project**, and click **OK**.  
+![Resource List](images/jenkins-new-job.png)  
