@@ -41,3 +41,4 @@ Jenkins is now configured and ready to build and deploy code. For this example, 
 ## Create build job  
 Now create a Jenkins build job. Select **New Item**, give the build project a name such as svn-tomcat-demo, select **Freestyle project**, and click **OK**.  
 ![Resource List](images/jenkins-new-job.png)  
+Under source code management, select Subversion and enter your SVN repository URL.  
