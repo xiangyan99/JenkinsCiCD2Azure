@@ -38,3 +38,4 @@ Create a new admin user account. This account is used for logging into and worki
 ![Resource List](images/jenkins-portal-07.png)  
 Select **Save and Finish** when done, and then **Start using Jenkins** to complete the configuration.  
 Jenkins is now configured and ready to build and deploy code. For this example, a simple Java application is used to demonstrate a Jenkins build on Azure Container Instances.  
+## Create build job  
