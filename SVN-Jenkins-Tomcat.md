@@ -41,4 +41,10 @@ Jenkins is now configured and ready to build and deploy code. For this example, 
 ## Create build job  
 Now create a Jenkins build job. Select **New Item**, give the build project a name such as svn-tomcat-demo, select **Freestyle project**, and click **OK**.  
 ![Resource List](images/jenkins-new-job.png)  
-Under source code management, select Subversion and enter your SVN repository URL.  
+Under source code management, select Subversion and enter your SVN repository URL and credential.  
+![Resource List](images/jenkins-job-01.png)  
+There is a sample Java app checked into the github. You can find it from https://github.com/xiangyan99/java-sample and check in the code into your SVN server.  
+Under **Build**, input **pom.xml** for **Root POM** and **package** for **Goals and options**.  
+![Resource List](images/jenkins-job-02.png)  
+Under **Post-build Actions**, select **add post-build action** and select **Deploy war/ear to a container**. Input comcat url and credentails.  
+![Resource List](images/jenkins-job-03.png)  
