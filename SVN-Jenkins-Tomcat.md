@@ -37,14 +37,20 @@ Select **Install suggested plugins** to install all recommended Jenkins plugins.
 Create a new admin user account. This account is used for logging into and working with your Jenkins instance.  
 ![Resource List](images/jenkins-portal-07.png)  
 Select **Save and Finish** when done, and then **Start using Jenkins** to complete the configuration.  
-Jenkins is now configured and ready to build and deploy code. For this example, a simple Java application is used to demonstrate a Jenkins build on Azure Container Instances.  
+Select **Manage Jenkins** then **Manage Plugins**. In **Available** tab, search **Maven Integration** and **Deploy to container** and install them.  
+![Resource List](images/jenkins-install-maven-plugin.png)  
+Jenkins is now configured and ready to build and deploy code. For this example, a simple Java application is used to demonstrate a Jenkins build. It can be found at https://github.com/xiangyan99/java-sample.  
 ## Create build job  
-Now create a Jenkins build job. Select **New Item**, give the build project a name such as svn-tomcat-demo, select **Freestyle project**, and click **OK**.  
+Now create a Jenkins build job. Select **New Item**, give the build project a name such as svn-tomcat-demo, select **Maven project**, and click **OK**.  
 ![Resource List](images/jenkins-new-job.png)  
 Under source code management, select Subversion and enter your SVN repository URL and credential.  
 ![Resource List](images/jenkins-job-01.png)  
-There is a sample Java app checked into the github. You can find it from https://github.com/xiangyan99/java-sample and check in the code into your SVN server.  
-Under **Build**, input **pom.xml** for **Root POM** and **package** for **Goals and options**.  
+Please download the sample code and check the code into your SVN server.  
+Under **Build**, input **package** for **Goals and options**.  
 ![Resource List](images/jenkins-job-02.png)  
 Under **Post-build Actions**, select **add post-build action** and select **Deploy war/ear to a container**. Input comcat url and credentails.  
 ![Resource List](images/jenkins-job-03.png)  
+## Run the build job  
+To test the build job, manually start a build.  
+Select Build Now to start a build job. It takes a few seconds for the job to start, when running, you should see status similar to the following images.  
+![Resource List](images/jenkins-job-status.png)  
