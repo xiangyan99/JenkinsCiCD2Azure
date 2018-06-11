@@ -64,7 +64,7 @@ Under **Build**, input **package** for **Goals and options**.
 
 * Deploy to Azure Web App
 
-Microsoft has an Jenkins plugin to deploy to Azure Web App service.  
+Microsoft has an Jenkins plugin to deploy to [Azure Web App service](https://docs.microsoft.com/en-us/azure/app-service/containers/app-service-linux-intro).  
 Under **Post-build Actions**, select **add post-build action** and select **Publish an Azure Web App**. Add your [Azure service pricipal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal) and from the dropdown list, you can choose your Web App Service.  
 ![Resource List](images/jenkins-job-04.png)  
 
