@@ -65,13 +65,13 @@ Under **Build**, input **package** for **Goals and options**.
 * Deploy to Azure Web App
 
 Microsoft has an Jenkins plugin to deploy to Azure Web App service.  
-Under **Post-build Actions**, select **add post-build action** and select **Publish an Azure Web App**. Input comcat url and credentails.  
+Under **Post-build Actions**, select **add post-build action** and select **Publish an Azure Web App**. Add your [Azure service pricipal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal) and from the dropdown list, you can choose your Web App Service.  
 ![Resource List](images/jenkins-job-04.png)  
 
 * Deploy to Tomcat server on VM
 
 If you have your own Tomcat server, you can deploy your package to your server as well.  
-Under **Post-build Actions**, select **add post-build action** and select **Deploy war/ear to a container**. Input comcat url and credentails.  
+Under **Post-build Actions**, select **add post-build action** and select **Deploy war/ear to a container**. Input Tomcat url and credential.  
 ![Resource List](images/jenkins-job-03.png)  
 
 ## Run the build job  
@@ -79,3 +79,7 @@ Under **Post-build Actions**, select **add post-build action** and select **Depl
 To test the build job, manually start a build.  
 Select Build Now to start a build job. It takes a few seconds for the job to start, when running, you should see status similar to the following images.  
 ![Resource List](images/jenkins-job-status.png)  
+
+## Here you go
+
+![Resource List](images/jenkins-job-05.png)  
