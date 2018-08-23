@@ -1,6 +1,6 @@
 # CI/CD using Jenkins to deploy asp.net core application into Azure AKS
 
-## Pre-configurations  
+## Prerequisites  
 
 * [Provision resources and do first time deployment](https://github.com/mjrousos/AspNetCore-Sample/tree/master/cicd)
 
