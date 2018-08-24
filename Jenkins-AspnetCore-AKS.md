@@ -60,11 +60,15 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 * Deploy secret of Azure ACR
 
+(You can skip this step if you have already done it in first-time deployment)
+
 ```bash
   kubectl create secret docker-registry regsecret --docker-server=${acr_server} --docker-username=${acr_username} --docker-password=${acr_password} --docker-email=${your_email}
 ```
 
 * Deploy secret of Applicatin Insights instrumentation key
+
+(You can skip this step if you have already done it in first-time deployment)
 
 ```bash
   kubectl create secret generic aspnetcoredemo-secrets --from-literal=AppInsightsKey=${ai_key}
