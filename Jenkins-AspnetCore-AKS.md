@@ -79,6 +79,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```bash
   sudo mkdir /var/lib/jenkins/.kube
   sudo cp .kube/config /var/lib/jenkins/.kube/
+  sudo chmod 777 /var/lib/jenkins/.kube/config
 ```
 
 Leave the SSH session and tunnel running, and navigate to <http://localhost:8080> in a browser. Paste the initial admin password into the field as seen in the following image. Select **Continue** when done.  
