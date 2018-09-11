@@ -30,6 +30,8 @@ On the additional settings form, complete the following items:
 ![Resource List](images/jenkins-portal-02.png)  
 For Integration Settings, select **No** to use Jenkins host to build the jobs.  
 ![Resource List](images/jenkins-portal-03.png)  
+If you want to use ACI or VM build agent, you can refer  <https://docs.microsoft.com/en-us/azure/container-instances/container-instances-jenkins> & <https://wiki.jenkins.io/display/JENKINS/Azure+VM+Agents+plugin>
+
 Once done with the integration settings, click **OK**, and then **OK** again on the validation summary. Click **Create** on the Terms of use summary. The Jenkins server takes a few minutes to deploy.  
 
 ## Configure Jenkins  
